@@ -5,16 +5,9 @@ const { clientId, guildId, token } = require('./config.json');
 
 const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-const commandMusic = fs.readdirSync('./commands/Music').filter(file => file.endsWith('.js'));
-
 
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
-    commands.push(command.data.toJSON());
-}
-
-for (const file of commandMusic) {
-    const command = require(`./commands/Music${file}`);
     commands.push(command.data.toJSON());
 }
 

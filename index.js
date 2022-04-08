@@ -4,7 +4,6 @@ const { token } = require('./config.json');
 
 const handleCommand = require('./helpers/command');
 const handleSelectMenu = require('./helpers/select-menu');
-const { type } = require('os');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -16,6 +15,7 @@ for (const file of commandFiles) {
     client.commands.set(command.data.name, command);
 }
 
+// Start message + Bot Status
 client.once('ready', () => {
     console.log('Bot Online')
     console.log(`With ${client.user.tag}!`);
