@@ -16,8 +16,8 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
-    console.log('Bot démarré')
-    console.log(`En tant que ${client.user.tag}!`);
+    console.log('Bot Online')
+    console.log(`With ${client.user.tag}!`);
 });
 
 client.on('interactionCreate', async interaction => {
