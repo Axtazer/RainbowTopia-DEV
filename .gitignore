@@ -76,5 +76,4 @@ typings/
 .fusebox/
 
 # Custom
-.package-lock.json
 config.json
