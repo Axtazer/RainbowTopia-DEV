@@ -4,6 +4,7 @@ const { token } = require('./config.json');
 
 const handleCommand = require('./helpers/command');
 const handleSelectMenu = require('./helpers/select-menu');
+const { type } = require('os');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -18,6 +19,8 @@ for (const file of commandFiles) {
 client.once('ready', () => {
     console.log('Bot Online')
     console.log(`With ${client.user.tag}!`);
+    client.user.setActivity('a 🌈Rainbow World✨', {type : 'WATCHING'});
+    client.user.setStatus('idle');
 });
 
 client.on('interactionCreate', async interaction => {

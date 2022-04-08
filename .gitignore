@@ -77,3 +77,4 @@ typings/
 
 # Custom
 config.json
+package-lock.json
