@@ -15,8 +15,7 @@ module.exports = {
 	        .setTitle('Information de connexion au serveur')
             .setAuthor({ name: 'RainbowTopia', iconURL: 'https://rainbowtopia.fr/storage/img/icon.png'/**, url: 'https://rainbowtopia.fr'*/ })
 	        .addFields(
-		    { name: 'Pour Java', value: 'Version : **1.18-1.18.X**\nIP : `Play.RainbowTopia.fr`', inline: true },
-		    { name: 'Pour Bedrock/Windows', value: 'IP : `Play.RainbowTopia.fr`\nPort : `25566`', inline: true },
+		    { name: 'Pour Java', value: 'Version : **1.16.5-1.18.X**\nIP : `Play.RainbowTopia.fr`', inline: true },
 	        )
     
         await interaction.reply({ ephemeral: false, embeds: [bedrock] });
